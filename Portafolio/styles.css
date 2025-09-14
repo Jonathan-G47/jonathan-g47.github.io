@@ -1,0 +1,422 @@
+:root{
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #f5f5f5;
+    --text-color: #333333;
+    --accent-color: #ff4757;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*  Contenedor principal del navbar */
+.main-navbar {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    z-index: 20;
+}
+
+/* Estilos base del nav */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* 📱 En móviles, los enlaces van en columna */
+    gap: 1rem;
+    align-items: center;
+}
+
+/*  Estilos de los enlaces */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/*  Media query para pantallas grandes */
+@media screen and (min-width: 768px) {
+    .main-navbar {
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+    }
+
+    nav ul {
+      flex-direction: row; /* 💻 En escritorio, los enlaces van en fila */
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+/* 🧱 Estilos base del header */
+.header {
+  background-color: var(--primary-color); /* Fondo azul profesional */
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* 🧾 Título principal */
+.header h1 {
+  font-size: clamp(2rem, 6vw, 3rem); /* Tamaño responsivo */
+  margin-bottom: 0.5rem;
+}
+
+/* 🗣️ Subtítulo */
+.header p {
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+/*  Imagen de perfil */
+.header img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Imagen circular */
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 3rem 4rem;
+  }
+
+  .header h1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+  }
+
+  .header p {
+    max-width: 600px;
+    font-size: 1.2rem;
+  }
+
+  .header img {
+    width: 180px;
+    height: 180px;
+    margin-left: 2rem;
+  }
+}
+
+/*  Sección Sobre mí */
+#sobre-mi {
+  background-color: var(--background-color); /* Fondo neutro y limpio */
+  color: var(--text-color); /* Texto legible */
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* 🧾 Título de sección */
+#sobre-mi h2 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem); /* Tamaño responsivo */
+  margin-bottom: 1rem;
+  color: var(--primary-color); /* Color destacado */
+}
+
+/* 🗣️ Párrafo descriptivo */
+#sobre-mi p {
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  #sobre-mi {
+    padding: 4rem 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sobre-mi p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+}
+
+/* 🧱 Sección Habilidades */
+#habilidades {
+  background-color: var(--background-color); /* Fondo neutro */
+  color: var(--text-color); /* Texto legible */
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* 🧾 Título de sección */
+#habilidades h2 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem); /* Tamaño responsivo */
+  margin-bottom: 1rem;
+  color: var(--primary-color); /* Color destacado */
+}
+
+/* 📋 Lista de habilidades */
+#habilidades ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* 🧠 Estilo de cada habilidad */
+#habilidades li {
+  background-color: white;
+  border-left: 5px solid var(--primary-color);
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  text-align: left;
+}
+
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Asegura que los hijos ocupen la misma altura */
+    min-height: 60vh;
+    position: relative;
+  }
+
+  /*  Div decorativo entre secciones */
+  .division {
+    width: 10px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 0 1rem;
+  animation: aparecer 0.8s ease-out forwards;
+  opacity: 0;
+  transform: rotate(15deg);
+  }
+
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+
+  #sobre-mi,
+  #habilidades {
+    flex: 1;
+    padding: 4rem 2rem;
+  }
+
+  #habilidades {
+    padding: 4rem 2rem;
+  }
+
+  #habilidades ul {
+    flex-direction: row; /* 💻 En escritorio, las habilidades se alinean en fila */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #habilidades li {
+    width: calc(50% - 1rem); /* Dos columnas */
+    margin: 0.5rem;
+  }
+}
+
+/*  Sección de proyectos */
+#proyectos {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* 🧾 Título de sección */
+#proyectos h2 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+/* 📦 Contenedor de cada proyecto */
+.container_proyects{
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.proyecto {
+  background-color: white;
+  border-left: 5px solid var(--primary-color);
+  padding:0 0 1rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+}
+
+/* 🧠 Título del proyecto */
+.proyecto h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+/* 📝 Descripción */
+.proyecto p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* 🔗 Enlace al proyecto */
+.proyecto a {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.proyecto a:hover {
+  background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  #proyectos {
+    padding: 4rem 2rem;
+  }
+
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .proyecto h3 {
+    font-size: 1.6rem;
+  }
+
+  .proyecto p {
+    font-size: 1.1rem;
+  }
+}
+
+/* 📬 Sección de contacto */
+#contacto {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* 🧾 Título de sección */
+#contacto h2 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+/* 📝 Formulario */
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* 🧠 Campos de entrada */
+#contacto input,
+#contacto textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+/* 📨 Botón de envío */
+#contacto button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  font-size: 20px;
+}
+
+#contacto button:hover {
+  background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  #contacto {
+    padding: 4rem 2rem;
+  }
+
+  #contacto form {
+    gap: 1.5rem;
+  }
+
+  #contacto input,
+  #contacto textarea {
+    font-size: 1.1rem;
+  }
+}
+
+/* 🧱 Pie de página */
+footer {
+    background-color: var(--secondary-color); /* Fondo oscuro elegante */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/*  Texto del footer */
+footer p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 2rem;
+        font-size: 1rem;
+    }
+}
