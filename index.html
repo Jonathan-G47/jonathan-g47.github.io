@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jonathan García Rojas" />
+    <meta name="description" content="Portafolio profesional de Jonathan García, desarrollador frontend junior especializado en React con proyección a fullstack."/>
+    <title>Jonathan Garcia | Fronted Developer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">Jonathan<span class="brand-dot">.</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                <li><a href="#skills" class="nav-link">Tecnologías</a></li>
+                <li><a href="#service" class="nav-link">Servicios</a></li>
+                <li><a href="#project" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <li><a href="#footer" class="nav-link">Final</a></li>
+
+            </ul>
+            <div class="nav-cta">
+                <a href="https://wa.me/5356269873" target="_blank" class="cta-btn">Contactar</a>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section home">
+            <div class="container">
+                <div class="home-content">
+                    <div class="home-text">
+                        <div class="greeting">👋 Hola a todos!</div>
+                        <h1 class="hero-title">Yo soy <span class="accent">Jonathan</span></h1>
+                        <h2 class="hero-subtitle" id="rotating-profession">Frontend Developer</h2>
+                        <p class="hero-desc">
+                            Desarrollo interfaces web claras, responsivas y funcionales,
+                            enfocadas en resolver problemas reales y aportar valor a equipos de desarrollo.
+                            Me interesa escribir código mantenible y entender el porqué de cada decisión técnica.
+                        </p>
+
+                        <div class="hero-actions">
+                            <button class="hire-btn primary" onclick="location.href='#contact'">
+                                <span>Contáctame</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+
+                        <div class="social-links">
+                            <a href="https://wa.me/5356269873?text=Hola%20Jonathan,%20vi%20tu%20portafolio%20y%20quiero%20hablar%20contigo" 
+                                aria-label="WhatsApp" 
+                                class="social-icon whatsapp" 
+                                target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/TU_USUARIO" 
+                                aria-label="LinkedIn" 
+                                class="social-icon linkedin" 
+                                target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="https://github.com/Jonathan-G47"
+                                aria-label="GitHub" 
+                                class="social-icon github" 
+                                target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="https://instagram.com/jonath.grcia" 
+                                aria-label="Instagram" 
+                                class="social-icon instagram" 
+                                target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="home-image">
+                        <div class="image-container">
+                            <img src="images/img.jpg" alt="Profile photo of Asep" class="profile-image">
+                            <div class="floating-card card-1">
+                                <i class="fas fa-code"></i>
+                                <span>Clean Code</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-rocket"></i>
+                                <span>Fast Loading</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="images/img.jpg" alt="About Asep" class="about-img">
+                            <div class="experience-badge">
+                                <span class="badge-number">1+</span>
+                                <span class="badge-text">Año<br>Experiencia</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-text">
+                        <h2 class="section-title">Sobre Mí</h2>
+                        <div class="about-description">
+                            <p>Soy desarrollador frontend junior con bases sólidas en desarrollo web moderno. Me adapto rápido a nuevos entornos y disfruto trabajar en equipo construyendo interfaces que funcionen bien en cualquier dispositivo.</p>
+                            
+                            <p>Actualmente estudio Ingeniería Informática y continúo formándome en backend y bases de datos para evolucionar hacia un perfil fullstack.</p>
+                        </div>
+
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Educación</h4>
+                                    <p>Ingeniería Informática</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Localización</h4>
+                                    <p>San Juan de los Remedios, Villa Clara, Cuba</p></div>
+                                </div>
+                            <div class="highlight">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <h4>Experiencia</h4> 
+                                    <p>1 Año como Desarrollador Frontend</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Habilidades & Experiencia</h2>
+                <div class="skills-content">
+                    <div class="skills-grid">
+                    
+                        <!-- Frontend -->
+                        <div class="skill-category">
+                            <h3>Desarrollo Frontend</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-js-square"></i>
+                                    <span>JavaScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" 
+                                            alt="TypeScript logo" 
+                                            class="ts-icon">
+                                    <span>TypeScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Database -->
+                        <div class="skill-category">
+                            <h3>Bases de Datos</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>PostgreSQL</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- DevOps & Tools -->
+                        <div class="skill-category">
+                            <h3>Herramientas & Control de Versiones</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span>Git</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-code"></i>
+                                    <span>VS Code</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- UI/UX -->
+                        <div class="skill-category">
+                            <h3>Diseño UI/UX</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Diseño Responsive</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Mobile -->
+                        <div class="skill-category">
+                            <h3>Desarrollo Móvil</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="service" class="section services">
+            <div class="container">
+                <h2 class="section-title">Servicios</h2>
+            
+                <div class="services-content">
+                    <div class="services-grid">
+                    
+                        <!-- Desarrollo Web -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-code" aria-hidden="true"></i>
+                            </div>
+                            <h3>Desarrollo Web</h3>
+                            <p>
+                                Desarrollo sitios web modernos, rápidos y totalmente adaptables a cualquier dispositivo. 
+                                Me enfoco en buenas prácticas, rendimiento y una experiencia visual profesional.
+                            </p>
+                        </div>
+                    
+                        <!-- Diseño UI/UX -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-palette" aria-hidden="true"></i>
+                            </div>
+                            <h3>Diseño UI/UX</h3>
+                            <p>
+                                Diseño interfaces intuitivas, accesibles y atractivas. 
+                                Me enfoco en la experiencia del usuario, la claridad visual y la facilidad de uso.
+                            </p>
+                        </div>
+                    
+                        <!-- Optimización de Rendimiento -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-rocket" aria-hidden="true"></i>
+                            </div>
+                            <h3>Optimización de Rendimiento</h3>
+                            <p>
+                                Mejoro la velocidad, estabilidad y escalabilidad de sitios web y aplicaciones, 
+                                asegurando tiempos de carga rápidos y un funcionamiento impecable.
+                            </p>
+                        </div>
+                    
+                        <!-- Soluciones E‑commerce -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                            </div>
+                            <h3>Soluciones E‑commerce</h3>
+                            <p>
+                                Desarrollo tiendas online seguras, eficientes y enfocadas en aumentar conversiones. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="project" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="projects-content">
+                    <div class="projects-grid">
+                    
+                        <!-- Proyecto 1: E-commerce -->
+                        <div class="project-card">
+                            <div class="project-image no-image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <!-- DEMO -->
+                                        <a href="https://jonathan-g47.github.io/ecommerce-react/" class="project-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <!-- REPOSITORIO -->
+                                        <a href="https://github.com/Jonathan-G47/ecommerce-react" class="project-link" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>E-commerce con React</h3>
+                                <p>Tienda online desarrollada con React, Tailwind y TypeScript. Incluye carrito, filtrado de productos y diseño totalmente responsive.</p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>Tailwind CSS</span>
+                                    <span>TypeScript</span>
+                                </div>
+                                <a href="https://jonathan-g47.github.io/ecommerce-react/" class="project-btn" target="_blank">Ver proyecto</a>
+                            </div>
+                        </div>
+                    
+                        <!-- Proyecto 2: To-Do App -->
+                        <div class="project-card">
+                            <div class="project-image no-image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <!-- DEMO -->
+                                        <a href="https://jonathan-g47.github.io/todo-react/" class="project-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <!-- REPOSITORIO -->
+                                        <a href="https://github.com/Jonathan-G47/todo-react" class="project-link" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Aplicación To‑Do</h3>
+                                <p>Gestor de tareas creado con React. Permite agregar, eliminar y completar tareas con una interfaz simple y clara.</p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>JavaScript</span>
+                                    <span>CSS3</span>
+                                </div>
+                                <a href="https://jonathan-g47.github.io/todo-react/" class="project-btn" target="_blank">Ver proyecto</a>
+                            </div>
+                        </div>
+                    
+                        <!-- Proyecto 3: Snake Game -->
+                        <div class="project-card">
+                            <div class="project-image no-image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <!-- DEMO -->
+                                        <a href="https://jonathan-g47.github.io/snake-game/" class="project-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <!-- REPOSITORIO -->
+                                        <a href="https://github.com/Jonathan-G47/snake-game" class="project-link" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Juego Snake</h3>
+                                <p>Versión clásica del juego Snake desarrollada con HTML, CSS y JavaScript. Incluye detección de colisiones y aumento progresivo de dificultad.</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="https://jonathan-g47.github.io/snake-game/" class="project-btn" target="_blank">Ver proyecto</a>
+                            </div>
+                        </div>
+                    
+                        <!-- Proyecto 4: Juego de Memoria -->
+                        <div class="project-card">
+                            <div class="project-image no-image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <!-- DEMO -->
+                                        <a href="https://jonathan-g47.github.io/memory-game/" class="project-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <!-- REPOSITORIO -->
+                                        <a href="https://github.com/Jonathan-G47/memory-game" class="project-link" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Juego de Memoria</h3>
+                                <p>Juego interactivo de cartas donde el usuario debe encontrar las parejas. Desarrollado con JavaScript y animaciones simples.</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="https://jonathan-g47.github.io/memory-game/" class="project-btn" target="_blank">Ver proyecto</a>
+                            </div>
+                        </div>
+                    
+                        <!-- Proyecto 5: Landing Page Restaurante -->
+                        <div class="project-card">
+                            <div class="project-image no-image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <!-- DEMO -->
+                                        <a href="https://jonathan-g47.github.io/landing-restaurant/" class="project-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <!-- REPOSITORIO -->
+                                        <a href="https://github.com/Jonathan-G47/landing-restaurant" class="project-link" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Landing Page Restaurante</h3>
+                                <p>Página promocional para un restaurante, con diseño moderno, secciones informativas y estructura totalmente responsive.</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="https://jonathan-g47.github.io/landing-restaurant/" class="project-btn" target="_blank">Ver proyecto</a>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+            
+                <div class="contact-content">
+                
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                    
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Correo Electrónico</h3>
+                                <p>jhongarcia8230@gmail.com</p>
+                                <a href="mailto:jhongarcia8230@gmail.com">Enviar Correo</a>
+                            </div>
+                        </div>
+                    
+                        <!-- Phone -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Teléfono</h3>
+                                <p>+53 56 26 98 73</p>
+                                <a href="tel:+5356269873">Llamar Ahora</a>
+                            </div>
+                        </div>
+                    
+                        <!-- WhatsApp -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p>+53 56 26 98 73</p>
+                                <a href="https://wa.me/5356269873" target="_blank">Enviar Mensaje</a>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <form id="contactForm">
+                        
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required aria-label="Nombre completo">
+                                <label for="name">Nombre</label>
+                            </div>
+                        
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required aria-label="Correo electrónico">
+                                <label for="email">Correo</label>
+                            </div>
+                        
+                            <div class="form-group">
+                                <input type="text" id="phone" name="phone" required aria-label="Número de teléfono">
+                                <label for="phone">Teléfono</label>
+                            </div>
+                        
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required aria-label="Mensaje"></textarea>
+                                <label for="message">Mensaje</label>
+                            </div>
+                        
+                            <button type="submit" class="submit-btn">
+                                <span>Enviar Mensaje</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        
+                        </form>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+<footer  id="footer" class="footer">
+    <div class="container footer-container">
+
+        <div class="footer-brand">
+            <h3 class="footer-title">Jonathan</h3>
+            <p class="footer-desc">
+                Desarrollador Frontend enfocado en crear interfaces modernas, accesibles y de alto rendimiento.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#service">Servicios</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Redes</h4>
+            <div class="social-icons">
+                <a href="https://wa.me/5356269873" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/TU_USUARIO" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/TU_USUARIO" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/TU_USUARIO" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Jonathan — <a href="#home" class="back-to-top" >Ir al Inicio</a></p>
+    </div>
+
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
